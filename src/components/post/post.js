@@ -13,7 +13,7 @@ function Post(props) {
       console.log(response.data);
       setMovies(response.data.results)
     })
-  }, [])
+  }, [props.url])
 
   const opts = {
     height: '390',
